@@ -7,8 +7,8 @@ export const site = {
   email: "engr.ananna@gmail.com", 
   linkedin: "https://linkedin.com/in/noushin-binte-islam-ananna", github: "https://github.com/Noushin-Binte-Islam-Ananna", location: "Dhaka, Bangladesh",
   facebook: "https://www.facebook.com/anannabadhon.apshora/", 
-  photo: "/ananna.jpeg",
-  resume: "/Ananna_Resume.pdf",
+  photo: import.meta.env.BASE_URL + "ananna.jpeg",
+  resume: import.meta.env.BASE_URL + "Ananna_Resume.pdf",
   nav: ["About", "Skills", "Projects", "Experience", "Contact"],
   about: [
     "I'm a Computer Science and Engineering graduate from Independent University, Bangladesh. My interest lies in web development, particularly building interactive frontend experiences and exploring full-stack technologies.",
