@@ -1,0 +1,42 @@
+/**
+ * ADD A PROJECT: copy one object below, change the fields, save. Nothing else to edit.
+ * Fields: id (unique), title, category (any string; filter tabs are generated from it),
+ * status ("Live" | "Completed" | "In progress"), featured (true shows it in Featured),
+ * description, features [], tech [], image (optional path or URL, e.g. "/screens/x.png"),
+ * live (optional URL), github (optional URL), order (lower number appears first).
+ */
+const GH = "https://github.com/Noushin-Binte-Islam-Ananna/";
+export const projects = [
+  { id: "movie-explorer", order: 1, featured: true, status: "Live", category: "React", title: "Movie Explorer",
+    description: "A responsive Movie Explorer application built using React, Vite, and Tailwind CSS. It allows users to browse TV shows, search titles dynamically, and explore detailed information through interactive modals.",
+    features: ["Dynamic TV show browsing", "Debounced live search with TVMaze API", "Detail modal closes by keyboard or backdrop", "Responsive show grid"],
+    tech: ["React", "JavaScript", "Vite", "Tailwind CSS", "TVMaze API"], image: "", live: "https://movie-explorer-eosin-kappa.vercel.app/", github: "" },
+  { id: "employee-management", order: 2, featured: true, status: "Completed", category: "Full-Stack", title: "Employee Management System",
+    description: "An employee management system developed during my internship at Cyber-Hundred as a Junior Web Developer.",
+    features: ["Employee information management", "Project submission and monitoring", "Pending task review", "Salary and leave management"],
+    tech: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"], image: "", live: "", github: GH + "Employee_Management_System" },
+  { id: "organic-food-shop", order: 3, featured: true, status: "Live", category: "Frontend", title: "Organic Food Shop",
+    description: "A responsive e-commerce website designed to showcase and sell organic food products through a clean, user-friendly shopping experience.",
+    features: ["Product browsing", "Responsive navigation", "Shopping-related UI", "Cash on Delivery and bKash options shown in the design"],
+    tech: ["HTML", "CSS", "JavaScript"], image: "", live: "https://noushin-binte-islam-ananna.github.io/Organic_Food_Service/", github: GH + "Organic_Food_Service" },
+  { id: "issues-tracker", order: 4, featured: true, status: "Completed", category: "Frontend", title: "GitHub Issues Tracker",
+    description: "An interactive issue-tracking application that allows users to explore and organize GitHub-style issues through dynamic filtering and DOM manipulation.",
+    features: ["All, Open and Closed issue views", "Interactive popup modals", "Event handling and DOM updates", "Sign-up page interface"],
+    tech: ["HTML5", "Tailwind CSS", "JavaScript"], image: "", live: "https://noushin-binte-islam-ananna.github.io/B13-A5-Github-Issue-Tracker-doing/", github: "https://github.com/Noushin-Binte-Islam-Ananna/B13-A5-Github-Issue-Tracker-doing" },
+  { id: "job-tracker", order: 5, featured: false, status: "Completed", category: "Frontend", title: "Job Application Tracker",
+    description: "A web application designed to help users track job applications and monitor their application progress.",
+    features: ["Total application count", "Accepted and rejected tracking", "Interactive job status management"],
+    tech: ["HTML", "Tailwind CSS", "JavaScript"], image: "", live: "https://noushin-binte-islam-ananna.github.io/B13-A4-Job-Tracker/", github: GH + "B13-A4-Job-Tracker" },
+  { id: "focus-tracker", order: 6, featured: false, status: "Live", category: "Personal", title: "Focus Tracker",
+    description: "A personal productivity application designed to help users track focused work sessions and understand their productivity patterns.",
+    features: [], tech: ["HTML", "CSS", "Tailwind CSS"], image: "", live: "https://noushin-binte-islam-ananna.github.io/Personal-Focus-Tracker/", github: "" },
+  { id: "carbon-tracker", order: 7, featured: false, status: "Completed", category: "Full-Stack", title: "Carbon Footprint Tracker",
+    description: "A web application designed to help people monitor their daily habits and receive personalized suggestions for reducing their carbon footprint.",
+    features: [], tech: ["HTML", "CSS", "PHP", "MySQL"], image: "", live: "", github: GH + "web-application-to-help-people-reduce-carbon-footprint" },
+  { id: "techwave", order: 8, featured: false, status: "Completed", category: "Frontend", title: "TechWave",
+    description: "A responsive webpage focused on technology insights, productivity hacks, and personal growth.",
+    features: [], tech: ["HTML5", "CSS3"], image: "", live: "https://noushin-binte-islam-ananna.github.io/B13-A02-TechWave/", github: GH + "B13-A02-TechWave" },
+  { id: "knowledge-vault", order: 9, featured: false, status: "Completed", category: "Frontend", title: "Knowledge Vault",
+    description: "A simple knowledge and ideas webpage developed as part of my web development coursework.",
+    features: [], tech: ["HTML", "CSS"], image: "", live: "https://noushin-binte-islam-ananna.github.io/Knowledge-Vault/", github: GH + "Knowledge-Vault" },
+];

@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@theme {
+  --font-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-sans: "Figtree", system-ui, sans-serif;
+  --color-bg: #14161c; --color-surface: #1c1f28; --color-line: #2e3342;
+  --color-muted: #a0a6b4; --color-accent: #55d6e8; --color-violet: #9a8cff;
+}
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; color-scheme: dark; }
+body { background: var(--color-bg); color: #e9ebf2; font-family: var(--font-sans); }
+h1, h2, h3 { font-family: var(--font-display); }
+:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; }
+@keyframes drift { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(40px,-30px) scale(1.15); } }
+@keyframes blink { 50% { opacity: 0; } }
+.blob { animation: drift 14s ease-in-out infinite; }
+.caret { animation: blink 1s steps(1) infinite; }
+.glow { transition: box-shadow .25s, border-color .25s; }
+.glow:hover { border-color: var(--color-violet); box-shadow: 0 0 0 1px var(--color-violet), 0 12px 40px -12px rgb(154 140 255 / .45); }
+@media (prefers-reduced-motion: reduce) { .blob, .caret { animation: none; } html { scroll-behavior: auto; } * { transition-duration: .01ms !important; } }
+
+/* Photo border: always on, glows all around the circle */
+.photo-glow {
+  border-color: var(--color-violet);
+  box-shadow: 0 0 0 1px var(--color-violet), 0 0 28px -2px rgb(154 140 255 / .55);
+}
